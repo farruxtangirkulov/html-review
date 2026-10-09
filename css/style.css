@@ -1,0 +1,285 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f7;
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+/* ---------- Header (banner) ---------- */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #4776b9);
+    color: #fff;
+    text-align: center;
+    padding: 45px 20px 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+header p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+/* ---------- Navigation menu ---------- */
+nav {
+    background: #16325c;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #dfe9f5;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #4776b9;
+    color: #fff;
+}
+
+nav ul li a.active {
+    background: #f5a623;
+    color: #16325c;
+    border-radius: 0 0 8px 8px;
+}
+
+/* ---------- Main content ---------- */
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #16325c;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #f5a623;
+    display: inline-block;
+    width: 100%;
+}
+
+/* ---------- Intro card ---------- */
+.intro-card {
+    background: linear-gradient(135deg, #fdfbf7, #fdeedc);
+    border-left: 6px solid #f5a623;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.intro-card h3 {
+    color: #b06d00;
+    margin-bottom: 8px;
+}
+
+/* ---------- Tag cards ---------- */
+.tag-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 18px rgba(30, 60, 114, 0.12);
+    border-top: 5px solid #2a5298;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.tag-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(30, 60, 114, 0.22);
+}
+
+.tag-name {
+    font-family: 'Courier New', Courier, monospace;
+    background: #16325c;
+    color: #f5a623;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.tag-card h4 {
+    color: #2a5298;
+    margin: 18px 0 8px;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---------- Tables ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: #1e3c72;
+    color: #fff;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dde5ef;
+}
+
+tr:nth-child(even) td {
+    background: #f4f8fc;
+}
+
+tr:hover td {
+    background: #e3edf8;
+}
+
+/* ---------- Code block ---------- */
+pre {
+    background: #1e2530;
+    color: #a6e22e;
+    padding: 18px 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 10px 0;
+    border-left: 5px solid #f5a623;
+    font-size: 0.95rem;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background: #e8eef6;
+    color: #c0392b;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* ---------- Result box ---------- */
+.result {
+    background: #f0faf4;
+    border: 2px dashed #2ecc71;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 10px 0;
+}
+
+.result h1, .result h2, .result h3,
+.result h4, .result h5, .result h6 {
+    color: #16325c;
+    margin: 6px 0;
+}
+
+.note {
+    color: #b06d00;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* ---------- Images & media ---------- */
+img, video, audio, iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+/* ---------- Form fields in results ---------- */
+.result input, .result textarea, .result select, .result button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 2px solid #2a5298;
+    border-radius: 6px;
+    margin-top: 4px;
+}
+
+.result input:focus, .result textarea:focus, .result select:focus {
+    outline: none;
+    border-color: #f5a623;
+    box-shadow: 0 0 5px rgba(245, 166, 35, 0.6);
+}
+
+.result button {
+    background: #2a5298;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.result button:hover {
+    background: #f5a623;
+    color: #16325c;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #16325c;
+    color: #dfe9f5;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li a {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    .tag-card {
+        padding: 20px;
+    }
+}

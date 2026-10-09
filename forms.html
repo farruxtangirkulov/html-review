@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html" class="active">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 6 — Forms</h2>
+
+    <!-- ===== form ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;form&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;form&gt;</code> tag is a container that collects user input
+        and can send it to a server.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>action</td><td>URL where the data is sent.</td></tr>
+            <tr><td>method</td><td>HTTP method used: "get" or "post".</td></tr>
+            <tr><td>name</td><td>Name of the form.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;form action="/save" method="post"&gt;
+  &lt;!-- inputs go here --&gt;
+&lt;/form&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>The form itself is invisible — its inputs are shown in the examples below. ⬇️</p>
+        </div>
+    </article>
+
+    <!-- ===== input / label ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;input&gt; &amp; &lt;label&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;input&gt;</code> tag creates interactive fields (text,
+        checkbox, radio, etc.). <code>&lt;label&gt;</code> writes a text caption
+        attached to an input.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>type</td><td>Type of field: text, email, password, checkbox, radio…</td></tr>
+            <tr><td>name</td><td>Name of the field sent to the server.</td></tr>
+            <tr><td>placeholder</td><td>Grey hint text inside the field.</td></tr>
+            <tr><td>required</td><td>The field must be filled before submitting.</td></tr>
+            <tr><td>for (label)</td><td>Links the label to the input's id.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;label for="user"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="user"
+       name="username" placeholder="Your name"&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p><label for="user">Username:</label><br>
+            <input type="text" id="user" name="username" placeholder="Your name"></p>
+        </div>
+    </article>
+
+    <!-- ===== textarea / select / button ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;textarea&gt;, &lt;select&gt; &amp; &lt;button&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p><code>&lt;textarea&gt;</code> creates a multi-line text area,
+        <code>&lt;select&gt;</code> creates a drop-down list with
+        <code>&lt;option&gt;</code> items, and <code>&lt;button&gt;</code> creates
+        a clickable button.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>rows / cols</td><td>Size of the textarea (lines and columns).</td></tr>
+            <tr><td>selected (option)</td><td>Pre-selects an option.</td></tr>
+            <tr><td>type (button)</td><td>"submit", "reset" or "button".</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;textarea rows="3" cols="30"&gt;Write here...&lt;/textarea&gt;
+
+&lt;select&gt;
+  &lt;option&gt;Red&lt;/option&gt;
+  &lt;option selected&gt;Green&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;button type="button"&gt;Click me&lt;/button&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p><textarea rows="3" cols="30">Write here...</textarea></p>
+            <p>
+                <select>
+                    <option>Red</option>
+                    <option selected>Green</option>
+                </select>
+                &nbsp;
+                <button type="button">Click me</button>
+            </p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

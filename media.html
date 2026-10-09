@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html" class="active">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 7 — Multimedia</h2>
+
+    <!-- ===== audio ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;audio&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;audio&gt;</code> tag plays a sound file on the page.
+        The <code>&lt;source&gt;</code> child tag gives the file to play.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>controls</td><td>Shows the player buttons (play, volume…).</td></tr>
+            <tr><td>autoplay</td><td>Starts playing automatically.</td></tr>
+            <tr><td>loop</td><td>Repeats the sound forever.</td></tr>
+            <tr><td>src (source)</td><td>Path of the audio file.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;audio controls&gt;
+  &lt;source src="images/song.mp3" type="audio/mpeg"&gt;
+  Your browser does not support audio.
+&lt;/audio&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <audio controls>
+                <source src="images/song.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+            <p class="note">⚠️ Place a file called <code>song.mp3</code> inside <code>images/</code>.</p>
+        </div>
+    </article>
+
+    <!-- ===== video ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;video&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;video&gt;</code> tag plays a video on the page with a
+        built-in player, without needing any plugin.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>controls</td><td>Displays the player controls.</td></tr>
+            <tr><td>width / height</td><td>Size of the video in pixels.</td></tr>
+            <tr><td>poster</td><td>Image shown before the video plays.</td></tr>
+            <tr><td>muted</td><td>Plays the video without sound.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;video controls width="320"&gt;
+  &lt;source src="images/movie.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&lt;/video&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <video controls width="320">
+                <source src="images/movie.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <p class="note">⚠️ Place a file called <code>movie.mp4</code> inside <code>images/</code>.</p>
+        </div>
+    </article>
+
+    <!-- ===== iframe ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;iframe&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;iframe&gt;</code> tag displays another web page inside
+        the current page, in a small window.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>src</td><td>URL of the page to display.</td></tr>
+            <tr><td>width / height</td><td>Size of the frame in pixels.</td></tr>
+            <tr><td>title</td><td>Description of the frame (accessibility).</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;iframe src="https://www.example.com"
+        width="300" height="150" title="Example"&gt;
+&lt;/iframe&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <iframe src="https://www.example.com" width="300" height="150" title="Example"></iframe>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links &amp; Images | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html" class="active">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 3 — Links &amp; Images</h2>
+
+    <!-- ===== a ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;a&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;a&gt;</code> (anchor) tag creates a hyperlink to another
+        page, a website, an email address or a position inside the same page.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>href</td><td>The destination URL of the link.</td></tr>
+            <tr><td>target</td><td>Where to open the link (_blank opens a new tab).</td></tr>
+            <tr><td>title</td><td>Tooltip text displayed on hover.</td></tr>
+            <tr><td>download</td><td>Tells the browser to download the target file.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;
+  Visit Google
+&lt;/a&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
+        </div>
+    </article>
+
+    <!-- ===== img ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;img&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;img&gt;</code> tag displays an image on the page.
+        It is an empty element — it has no closing tag.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>src</td><td>The path (source) of the image file.</td></tr>
+            <tr><td>alt</td><td>Alternative text shown if the image cannot load.</td></tr>
+            <tr><td>width</td><td>Width of the image in pixels.</td></tr>
+            <tr><td>height</td><td>Height of the image in pixels.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;img src="images/photo.jpg"
+     alt="A beautiful landscape"
+     width="300"&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <img src="images/photo.jpg" alt="A beautiful landscape" width="300"
+                 onerror="">
+            <p class="note">⚠️ If the image doesn't appear, place a file called
+            <code>photo.jpg</code> inside the <code>images/</code> folder.</p>
+        </div>
+    </article>
+
+    <!-- ===== figure / figcaption ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;figure&gt; &amp; &lt;figcaption&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p><code>&lt;figure&gt;</code> groups an image (or diagram) with its caption.
+        <code>&lt;figcaption&gt;</code> writes the caption text.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Unique identifier of the element.</td></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;figure&gt;
+  &lt;img src="images/photo.jpg" alt="Landscape" width="250"&gt;
+  &lt;figcaption&gt;Fig.1 — A beautiful landscape&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <figure>
+                <img src="images/photo.jpg" alt="Landscape" width="250">
+                <figcaption>Fig.1 — A beautiful landscape</figcaption>
+            </figure>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

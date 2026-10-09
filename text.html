@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html" class="active">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 2 — Text Formatting Tags</h2>
+
+    <!-- ===== h1 to h6 ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;h1&gt; … &lt;h6&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>Heading tags define titles of different importance.
+        <code>&lt;h1&gt;</code> is the most important, <code>&lt;h6&gt;</code> the least.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Gives a unique identifier to the heading.</td></tr>
+            <tr><td>class</td><td>Assigns one or more CSS classes.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;h1&gt;Title level 1&lt;/h1&gt;
+&lt;h3&gt;Title level 3&lt;/h3&gt;
+&lt;h6&gt;Title level 6&lt;/h6&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <h1>Title level 1</h1>
+            <h3>Title level 3</h3>
+            <h6>Title level 6</h6>
+        </div>
+    </article>
+
+    <!-- ===== p ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;p&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;p&gt;</code> tag defines a paragraph of text.
+        The browser automatically adds space before and after it.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Unique identifier of the paragraph.</td></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+            <tr><td>title</td><td>Extra information shown as a tooltip.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;p&gt;This is a second paragraph.&lt;/p&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>This is my first paragraph.</p>
+            <p>This is a second paragraph.</p>
+        </div>
+    </article>
+
+    <!-- ===== b / strong ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;b&gt; &amp; &lt;strong&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p><code>&lt;b&gt;</code> makes text <b>bold</b> without extra importance, while
+        <code>&lt;strong&gt;</code> marks text with <strong>strong importance</strong> (also bold).</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+            <tr><td>title</td><td>Tooltip text on hover.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;b&gt;Bold text&lt;/b&gt;
+&lt;strong&gt;Very important text&lt;/strong&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p><b>Bold text</b><br><strong>Very important text</strong></p>
+        </div>
+    </article>
+
+    <!-- ===== i / em / mark ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;i&gt;, &lt;em&gt; &amp; &lt;mark&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p><code>&lt;i&gt;</code> displays text in <i>italic</i>, <code>&lt;em&gt;</code> adds
+        <em>emphasis</em>, and <code>&lt;mark&gt;</code> <mark>highlights</mark> text with a yellow background.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+            <tr><td>id</td><td>Unique identifier of the element.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;i&gt;Italic text&lt;/i&gt;
+&lt;em&gt;Emphasized text&lt;/em&gt;
+&lt;mark&gt;Highlighted text&lt;/mark&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p><i>Italic text</i> — <em>Emphasized text</em> — <mark>Highlighted text</mark></p>
+        </div>
+    </article>
+
+    <!-- ===== br / hr / small / sub / sup / u ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;br&gt;, &lt;hr&gt;, &lt;small&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;u&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p><code>&lt;br&gt;</code> makes a line break, <code>&lt;hr&gt;</code> draws a
+        horizontal line, <code>&lt;small&gt;</code> makes text smaller,
+        <code>&lt;sub&gt;</code> and <code>&lt;sup&gt;</code> create subscript and
+        superscript, and <code>&lt;u&gt;</code> underlines text.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Unique identifier of the element.</td></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;p&gt;Line one&lt;br&gt;Line two&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;small&gt;Small text&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O and X&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;u&gt;Underlined text&lt;/u&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>Line one<br>Line two</p>
+            <hr>
+            <p><small>Small text</small></p>
+            <p>H<sub>2</sub>O and X<sup>2</sup></p>
+            <p><u>Underlined text</u></p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

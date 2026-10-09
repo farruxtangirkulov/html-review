@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html" class="active">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 4 — Lists</h2>
+
+    <!-- ===== ul ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;ul&gt; &amp; &lt;li&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;ul&gt;</code> tag creates an <strong>unordered list</strong>
+        (bullets). Each item is written inside an <code>&lt;li&gt;</code> element.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Unique identifier of the list.</td></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Cherry&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Cherry</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- ===== ol ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;ol&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;ol&gt;</code> tag creates an <strong>ordered list</strong>
+        (numbered). The items are automatically numbered by the browser.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>start</td><td>Number where the list starts counting.</td></tr>
+            <tr><td>type</td><td>Type of numbering: 1, A, a, I or i.</td></tr>
+            <tr><td>reversed</td><td>Displays the numbering in reverse order.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;ol start="1" type="A"&gt;
+  &lt;li&gt;Wake up&lt;/li&gt;
+  &lt;li&gt;Eat breakfast&lt;/li&gt;
+  &lt;li&gt;Go to school&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <ol start="1" type="A">
+                <li>Wake up</li>
+                <li>Eat breakfast</li>
+                <li>Go to school</li>
+            </ol>
+        </div>
+    </article>
+
+    <!-- ===== dl ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;dl&gt;, &lt;dt&gt; &amp; &lt;dd&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;dl&gt;</code> tag creates a <strong>description list</strong>.
+        <code>&lt;dt&gt;</code> is the term and <code>&lt;dd&gt;</code> is its description.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Unique identifier of the element.</td></tr>
+            <tr><td>class</td><td>CSS classes for styling.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

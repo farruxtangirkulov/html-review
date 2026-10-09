@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html" class="active">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 9 — Metadata</h2>
+
+    <section class="intro-card">
+        <h3>What is metadata? ℹ️</h3>
+        <p>Metadata is <strong>information about the page</strong> placed inside
+        the <code>&lt;head&gt;</code>. It is not visible on the page but is used
+        by browsers and search engines.</p>
+    </section>
+
+    <!-- ===== title ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;title&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;title&gt;</code> tag sets the name of the page shown in
+        the browser tab and in search engine results.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>—</td><td>The &lt;title&gt; tag has no specific attributes; it only contains text.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;head&gt;
+  &lt;title&gt;My Portfolio&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>The title appears in the <strong>browser tab</strong> — look up! ⬆️ 😄</p>
+        </div>
+    </article>
+
+    <!-- ===== meta ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;meta&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;meta&gt;</code> tag gives information about the document:
+        character encoding, description, author, viewport settings…</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>charset</td><td>Defines the character encoding (UTF-8).</td></tr>
+            <tr><td>name</td><td>Type of metadata: description, author, viewport…</td></tr>
+            <tr><td>content</td><td>The value of the metadata.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description"
+      content="A website to learn HTML5"&gt;
+&lt;meta name="author" content="John Doe"&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>Invisible on the page! But thanks to <code>charset="UTF-8"</code>,
+            special characters like <strong>é, à, ñ, 🙂</strong> display correctly.</p>
+        </div>
+    </article>
+
+    <!-- ===== link ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;link&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;link&gt;</code> tag connects an external resource to the
+        page — most often a CSS stylesheet. It is an empty element.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>rel</td><td>Relationship: "stylesheet", "icon"…</td></tr>
+            <tr><td>href</td><td>Path of the external file.</td></tr>
+            <tr><td>type</td><td>MIME type of the file (e.g. text/css).</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>The result is the beautiful design of this website — every page
+            links to <code>css/style.css</code> with this exact tag. 🎨</p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

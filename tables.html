@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html" class="active">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 5 — Tables</h2>
+
+    <!-- ===== table / tr / th / td ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;table&gt;, &lt;tr&gt;, &lt;th&gt; &amp; &lt;td&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;table&gt;</code> tag creates a table. Each row is a
+        <code>&lt;tr&gt;</code>, header cells are <code>&lt;th&gt;</code> and data
+        cells are <code>&lt;td&gt;</code>.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>colspan (td/th)</td><td>Makes a cell span several columns.</td></tr>
+            <tr><td>rowspan (td/th)</td><td>Makes a cell span several rows.</td></tr>
+            <tr><td>id / class</td><td>Identifier and CSS classes for styling.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <table>
+                <tr><th>Name</th><th>Age</th></tr>
+                <tr><td>Alice</td><td>20</td></tr>
+            </table>
+        </div>
+    </article>
+
+    <!-- ===== thead / tbody / tfoot / caption ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; &amp; &lt;caption&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>These tags structure a table into <strong>header</strong>,
+        <strong>body</strong> and <strong>footer</strong> sections.
+        <code>&lt;caption&gt;</code> adds a title to the table.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>id</td><td>Unique identifier of the section.</td></tr>
+            <tr><td>class</td><td>CSS classes for styling the section.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;table&gt;
+  &lt;caption&gt;Student grades&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;th&gt;Grade&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Math&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;&lt;td&gt;Average&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <table>
+                <caption>Student grades</caption>
+                <thead>
+                    <tr><th>Subject</th><th>Grade</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Math</td><td>16</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td>Average</td><td>16</td></tr>
+                </tfoot>
+            </table>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>

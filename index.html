@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home &amp; Page Structure | HTML5 Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header>
+    <h1>HTML5 Tutorial</h1>
+    <p>Learn basic HTML5 &amp; CSS step by step</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Page 1 — Home &amp; Page Structure</h2>
+
+    <section class="intro-card">
+        <h3>Welcome! 👋</h3>
+        <p>This website teaches you the basic HTML5 tags. Use the menu above to
+        navigate between the lessons. Each lesson shows the <strong>Definition</strong>,
+        <strong>Attributes</strong> and a live <strong>Example</strong> of every tag.</p>
+    </section>
+
+    <!-- ===== Tag 1 : html ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;html&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;html&gt;</code> tag is the root element of an HTML page.
+        It contains all the other elements of the document.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>lang</td><td>Defines the language of the page content (e.g. "en", "fr").</td></tr>
+            <tr><td>xmlns</td><td>Specifies the XML namespace (required for XHTML documents).</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;html lang="en"&gt;
+  ...
+&lt;/html&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>The &lt;html&gt; tag wraps the whole page — the result is this very page you are reading!</p>
+        </div>
+    </article>
+
+    <!-- ===== Tag 2 : head ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;head&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;head&gt;</code> element contains metadata about the page
+        (title, character set, links to CSS). It is not displayed in the browser window.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>profile</td><td>(Old) Gives the URL of a metadata profile.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;head&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>The result is invisible on the page: it appears in the <strong>browser tab title</strong>.</p>
+        </div>
+    </article>
+
+    <!-- ===== Tag 3 : body ===== -->
+    <article class="tag-card">
+        <h3 class="tag-name">&lt;body&gt;</h3>
+
+        <h4>📝 Definition</h4>
+        <p>The <code>&lt;body&gt;</code> element contains all the visible content
+        of the page: text, images, links, tables, etc.</p>
+
+        <h4>⚙️ Attributes</h4>
+        <table>
+            <tr><th>Attribute</th><th>Role</th></tr>
+            <tr><td>onload</td><td>Runs a script when the page finishes loading.</td></tr>
+            <tr><td>onunload</td><td>Runs a script when the user leaves the page.</td></tr>
+        </table>
+
+        <h4>💻 Example (code)</h4>
+        <pre><code>&lt;body&gt;
+  &lt;p&gt;Hello world!&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+        <h4>👀 Example (result)</h4>
+        <div class="result">
+            <p>Hello world!</p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 HTML5 Tutorial — Made with HTML &amp; CSS only 💙</p>
+</footer>
+
+</body>
+</html>
